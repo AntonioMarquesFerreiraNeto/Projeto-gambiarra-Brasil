@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário Artigo</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" name="descreption" content="Artigos - Governança de TI">
+    <!--Colocando a imagem icone do título.-->
+    <link rel="icon" href="_css/_imagens/techsolutions.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!--Css da página-->
+    <link rel="stylesheet" href="_css/artigo.css">
+</head>
+
+<body>
+    <main>
+        <header class="cabecalho">
+            <div class="container1">
+                <h1>Formulário para enviou de artigos.</h1>
+                <h2>Adicione seu texto!</h2>
+            </div>
+        </header>
+        <div class="d-flex justify-content-center formCss">
+            <form id="teste">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputNome">Nome</label>
+                        <!--O código abaixo contém o comando "size", e por se tratar de uma mesma classe do bootstrap em todos o inputs, não foi necessário colocar "size = 75" nos outros input.-->
+                        <input type="text" class="form-control" id="inputNome" placeholder="Informe seu nome completo." size="75">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputUni">Universidade</label>
+                        <input type="text" class="form-control" id="inputUni" placeholder="Informe sua universidade">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-lg-12">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Informe seu e-mail.">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-lg-6">
+                        <label for="inputEstado">De qual tópico que se trata?</label>
+                        <select id="inputEstado" class="form-control">
+                            <optgroup label="Principais áreas da TI">
+                                <option value="BD">Banco de Dados</option>
+                                <option value="CN">Computação em nuvem</option>
+                                <option value="DevWEB">Desenvolvimento WEB</option>
+                                <option value="DEV">Desenvolvimento desktop</option>
+                                <option value="DEVMob">Desenvolvimento mobile</option>
+                                <option value="ES">Engenharia de software</option>
+                                <option value="ER">Engenharia de requisitos</option>
+                                <option value="E"> E-commerce</option>
+                                <option value="GTI">Governança de TI</option>
+                                <option value="Infra">Infraestrutura de TI</option>
+                                <option value="RD">Redes de computadores</option>
+                                <option value="SI">Segurança da informação</option>
+                                <option value="ST">Suporte técnico</option>
+                                <option value="IA">Inteligência artificial</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <label for="inputTitulo">Título</label>
+                        <input type="text" class="form-control" id="inputTitulo"
+                            placeholder="Informe o título do conteúdo.">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-lg-12">
+                        <label for="inputFile">Arquivo</label>
+                        <input type="file" class="form-control-file" id="inputFile">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Concordo com o envio das informações solicitadas.
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary enviar_btn">Enviar</button>
+            </form>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
